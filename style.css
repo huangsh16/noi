@@ -149,35 +149,38 @@ img {
 /* ---- 定价表整体 ---- */
 .pricing-table-wrapper {
     width: 100%;
-    overflow-x: auto; /* 手机端可滑动 */
-    margin: 20px 0;
+    overflow-x: auto;
+    margin: 16px 0;
 }
 
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 16px;
-    min-width: 480px; /* 防止手机变形，让用户可以滑动 */
+    font-size: 16px;          /* 更小字体 */
+    table-layout: fixed;      /* 自动压缩列宽 */
 }
 
 /* 表头样式 */
 .pricing-table thead th {
     background: #f8f9ff;
-    padding: 12px;
+    padding: 6px;            /* 更小 padding */
     text-align: center;
     font-weight: bold;
     color: #333;
     border-bottom: 2px solid #ddd;
+    white-space: normal;     /* 允许换行 */
 }
 
 /* 单元格样式 */
 .pricing-table tbody td {
-    padding: 12px;
+    padding: 6px;            /* 更小 padding */
     text-align: center;
     border-bottom: 1px solid #eee;
+    white-space: normal;     /* 允许换行，不再撑宽 */
+    word-break: break-word;  /* 自动换行防溢出 */
 }
 
-/* 行 hover 效果（桌面端更美观） */
+/* 行 hover 效果 */
 .pricing-table tbody tr:hover {
     background: #fafafa;
 }
@@ -185,10 +188,11 @@ img {
 /* 颜色标签 */
 .tag {
     display: inline-block;
-    padding: 4px 10px;
+    padding: 2px 6px;        /* 更小标签 */
     border-radius: 6px;
     color: #fff;
     font-weight: bold;
+    font-size: 16px;         /* 更小字体 */
 }
 
 .tag-a { background: #6a88ff; }
@@ -197,43 +201,28 @@ img {
 
 /* 加粗价格 */
 .pricing-table td strong {
-    font-size: 17px;
+    font-size: 16px;
     color: #333;
 }
 
-/* —— 让表格在手机端更紧凑 —— */
-.pricing-table th,
-.pricing-table td {
-    padding: 6px 4px;     /* 减少边距 */
-    font-size: 13px;      /* 更小字体 */
-    white-space: nowrap;  /* 禁止自动换行（保持结构） */
-}
-
-/* —— 让表格整体更容易缩放 —— */
-.pricing-table {
-    width: 100%;
-    table-layout: fixed;  /* 关键：让列自动压缩适配宽度 */
-}
-
-/* —— 针对手机进一步优化 —— */
+/* 针对手机的进一步压缩 */
 @media (max-width: 480px) {
+    .pricing-table {
+        font-size: 15px;     /* 手机进一步缩小 */
+    }
     .pricing-table th,
     .pricing-table td {
-        padding: 4px 2px;   /* 进一步压缩 */
-        font-size: 12px;    /* 再缩小一点 */
+        padding: 4px;        /* 极小内边距 */
     }
-
-    /* 让三价位列更紧凑 */
-    .pricing-table td:nth-child(3),
-    .pricing-table td:nth-child(4) {
-        font-size: 11px;
-    }
-
-    /* 让 Tag 更小 */
     .tag {
-        font-size: 11px;
-        padding: 2px 6px;
+        font-size: 12px;
+        padding: 2px 5px;
     }
 }
 
-
+/* 让每一行更长、更舒服 */
+.pricing-table td,
+.pricing-table th {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
