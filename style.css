@@ -200,3 +200,40 @@ img {
     font-size: 17px;
     color: #333;
 }
+
+/* —— 让表格在手机端更紧凑 —— */
+.pricing-table th,
+.pricing-table td {
+    padding: 6px 4px;     /* 减少边距 */
+    font-size: 13px;      /* 更小字体 */
+    white-space: nowrap;  /* 禁止自动换行（保持结构） */
+}
+
+/* —— 让表格整体更容易缩放 —— */
+.pricing-table {
+    width: 100%;
+    table-layout: fixed;  /* 关键：让列自动压缩适配宽度 */
+}
+
+/* —— 针对手机进一步优化 —— */
+@media (max-width: 480px) {
+    .pricing-table th,
+    .pricing-table td {
+        padding: 4px 2px;   /* 进一步压缩 */
+        font-size: 12px;    /* 再缩小一点 */
+    }
+
+    /* 让三价位列更紧凑 */
+    .pricing-table td:nth-child(3),
+    .pricing-table td:nth-child(4) {
+        font-size: 11px;
+    }
+
+    /* 让 Tag 更小 */
+    .tag {
+        font-size: 11px;
+        padding: 2px 6px;
+    }
+}
+
+
