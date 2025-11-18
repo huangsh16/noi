@@ -2,29 +2,96 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的产品</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>💡 信奥高分思维训练</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- 顶部导航 -->
     <header>
-        <div class="container">
-            <h1>我的产品名称</h1>
+        <div class="container header-container">
+            <h1>💡 信奥高分思维训练</h1>
             <nav>
-                <a href="#product">产品介绍</a>
+                <a href="#overview">课程概览</a>
+                <a href="#lecturers">讲师团</a>
+                <a href="#plans">课程方案</a>
+                <a href="#faq">常见问题</a>
                 <a href="#contact">联系我们</a>
             </nav>
         </div>
     </header>
 
-    <!-- 产品介绍 -->
-    <section id="product" class="section">
+    <!-- 课程概览 -->
+    <section id="overview" class="section">
         <div class="container">
-            <h2>产品介绍</h2>
-            <div class="product-content">
-                <img src="images/product.jpg" alt="产品图片">
-                <p>这里是产品介绍文字，可以描述功能、特点和优势。让用户快速了解你的产品价值。</p>
+            <h2>你没见过的全新训练方法</h2>
+            <p>从“解题”到“构建思维”：顶尖选手的思维模型，为你完整解析。</p>
+            <p>告别“看题解也看不懂”，真正掌握高手的思考方式。我们不教知识点，我们教你如何思考。</p>
+            <p>🚀 已售 135 🔥 备受好评！</p>
+            <a href="#plans" class="btn-primary">点击购买</a>
+        </div>
+    </section>
+
+    <!-- 讲师团 -->
+    <section id="lecturers" class="section">
+        <div class="container">
+            <h2>🥇 金牌讲师团</h2>
+            <div class="lecturers-wrapper">
+                <div class="lecturer-card">
+                    <h3>主讲人 A – 北京大学信息科学技术学院</h3>
+                    <ul>
+                        <li>NOI 2021 全国青少年信息学奥林匹克竞赛 银牌</li>
+                        <li>NOI 2020 全国青少年信息学奥林匹克竞赛 D类 银牌</li>
+                        <li>2023年以文化课裸分高分考入北京大学信息科学技术学院</li>
+                        <li>北京大学程序设计竞赛核心命题人 (2025)</li>
+                    </ul>
+                </div>
+                <div class="lecturer-card">
+                    <h3>合作讲师 B – 顶尖竞赛选手</h3>
+                    <ul>
+                        <li>NOI 2022 银牌 & NOI 2021 D类金牌</li>
+                        <li>APIO 2020 亚洲和太平洋地区信息学奥林匹克竞赛 金牌</li>
+                        <li>CodeForces International Grandmaster, Rating 2700+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 课程方案 -->
+    <section id="plans" class="section">
+        <div class="container">
+            <h2>💰 课程方案与定价</h2>
+            <div class="plan-card">
+                <h3>入门体验</h3>
+                <p><strong>价格:</strong> 150元</p>
+                <p><strong>内容:</strong> 5 套精选 Educational Round 的文字版深度解析</p>
+                <p><strong>优势:</strong> 以极低成本，体验核心的思维解析方法</p>
+            </div>
+            <div class="plan-card">
+                <h3>完整订阅</h3>
+                <p><strong>价格:</strong> 450元/月</p>
+                <p><strong>内容:</strong> 每月至少 6 套题的文字版解析，金牌讲师团答疑，内容持续更新</p>
+                <p><strong>优势:</strong> 系统性学习，构建完整思维体系，享受专业指导</p>
+            </div>
+            <p>我们承诺：认真跟随课程节奏，你的算法思维能力必将迎来质的飞跃。</p>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2>常见问题 (Q&A)</h2>
+            <div class="faq-item">
+                <h3>Q1: 我自己看免费题解、总结方法，和上你的课有什么区别？</h3>
+                <p>A1: 本课程不仅提供“题解”，更教你如何绘制思维地图和模型，帮助你省去无效摸索时间。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q2: 为什么一个月的订阅要450元？</h3>
+                <p>A2: 你购买的是顶尖选手的思维方式和宝贵经验，远超零散题解和普通网课的价值。</p>
             </div>
         </div>
     </section>
@@ -33,18 +100,16 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>联系我们</h2>
-            <p>电话: 12345678</p>
             <p>邮箱: example@example.com</p>
-            <p>地址: 某某城市，某某街道</p>
+            <p>电话: 12345678</p>
         </div>
     </section>
 
+    <!-- 页脚 -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 我的产品. 保留所有权利。</p>
+            <p>&copy; 2025 信奥高分思维训练. 保留所有权利。</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

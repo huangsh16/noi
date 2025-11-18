@@ -1,24 +1,21 @@
-/* 基本重置 */
-* {
+/* 全局 */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 16px;
 }
 
-body {
-    font-family: "Arial", sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* 容器 */
 .container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
 }
 
-/* 顶部导航 */
+/* Header */
 header {
     background-color: #007bff;
     color: white;
@@ -28,6 +25,7 @@ header {
 header h1 {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 22px;
 }
 
 header nav {
@@ -36,62 +34,93 @@ header nav {
 
 header nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-/* 分区 */
+/* Sections */
 .section {
-    padding: 50px 0;
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .section h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 22px;
 }
 
-/* 产品介绍 */
-.product-content {
+/* 按钮 */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+/* 讲师团 */
+.lecturers-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
-.product-content img {
-    max-width: 400px;
-    width: 100%;
+.lecturer-card {
+    background-color: #f4f4f4;
+    padding: 15px;
     border-radius: 10px;
 }
 
-.product-content p {
-    max-width: 500px;
-    text-align: justify;
+/* 课程方案 */
+.plan-card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* 联系方式 */
-#contact p {
-    text-align: center;
-    margin: 10px 0;
+/* FAQ */
+.faq-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* 页脚 */
+/* Footer */
 footer {
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50px;
+}
+
+/* 图片自适应 */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* 响应式 */
-@media (max-width: 768px) {
-    .product-content {
-        flex-direction: column;
+@media (min-width: 768px) {
+    .lecturers-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
