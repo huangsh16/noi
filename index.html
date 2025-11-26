@@ -6,221 +6,305 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>💡 信奥满分思维训练</title>
+    <title>💡 信奥《思维路径还原》训练营</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 简单的内联样式补充 */
+        .data-bar {
+            background-color: #f0f7ff;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        .data-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .data-item h3 {
+            font-size: 24px;
+            color: #007bff;
+            margin: 0;
+            font-weight: 800;
+        }
+        .data-item p {
+            font-size: 12px;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+        
+        .sticky-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        .sticky-text {
+            font-size: 14px;
+            color: #333;
+        }
+        .sticky-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        body { padding-bottom: 70px; }
+        
+        .delivery-tag {
+            display: inline-block;
+            background: #fff3cd;
+            color: #856404;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* 答疑服务的简化强调样式 */
+        .qa-value-prop {
+            color: #d9534f;
+            font-weight: bold;
+            margin: 15px 0;
+            text-align: center;
+            border: 1px dashed #d9534f;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        /* 确保 strong 标签在任何地方都能正常加粗 */
+        strong { font-weight: bold; }
+    </style>
 </head>
 <body>
-    <!-- 顶部导航 -->
     <header>
         <div class="container header-container">
-            <h1>💡 信奥满分思维训练</h1>
+            <h1>💡 信奥《思维路径还原》训练营</h1>
             <nav>
-                <a href="#overview">课程概览</a>
-                <a href="#core">课程核心</a>
-                <a href="#lecturers">讲师团</a>
-                <a href="#plans">课程方案</a>
-                <a href="#contact">联系我们</a>
-                <a href="#consulting">专业咨询服务</a>
-                <a href="#faq">常见问题</a>
+                <a href="#overview">价值</a>
+                <a href="#core">核心</a>
+                <a href="#plans">方案</a>
+                <a href="#contact">试读</a>
             </nav>
         </div>
     </header>
 
-    <!-- 课程概览 -->
     <section id="overview" class="section">
         <div class="container">
-            <h2>你没见过的全新训练方法</h2>
-            <p>从“解题”到“构建思维”：顶尖选手的思维模型，为你完整解析。</p>
-            <p>告别“会算法但考试题目做不出来”，真正掌握高手的思考方式。我们不教知识点，我们教你如何思考。</p>
-            <p>学完本课程，你将能够独立分析竞赛题目，快速定位解题策略，并建立属于自己的解题思维体系。</p>
-            <p>🚀 已售 135 🔥 备受好评！</p>
-            <a href="#plans" class="btn-primary">点击购买</a>
+            <div class="delivery-tag">📖 深度图文解析专栏 · 随时随地永久回看</div>
+            
+            <h2>终结<strong>「看得懂题解，但自己写不出来」</strong>的魔咒！</h2>
+            <p class="lead-text">
+                告别<strong>无效刷题</strong>，我们为你<strong>完整解析并还原</strong>顶尖选手从读题到 AC 的<strong>每一个思考、试错和决策瞬间</strong>。
+            </p>
+            <p>
+                本专栏不教基础算法，我们教你如何像高手一样<strong>思考和决策</strong>，建立属于自己的竞赛思维体系。
+            </p>
+            
+            <a href="#contact" class="btn-primary" style="margin-top: 20px;">免费领取试读文档</a>
         </div>
     </section>
 
-    <!-- ⭐ 新增：课程核心 -->
+    <div class="data-bar">
+        <div class="container">
+            <div class="data-grid">
+                <div class="data-item">
+                    <h3>80+</h3>
+                    <p>学员平均提分</p>
+                </div>
+                <div class="data-item">
+                    <h3>95%</h3>
+                    <p>思维突破好评率</p>
+                </div>
+                <div class="data-item">
+                    <h3>16/期</h3>
+                    <p>精选进阶题库</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section id="core" class="section">
         <div class="container">
-            <h2>课程核心：我们到底在解析什么？</h2>
+            <h2>🔥 课程核心：顶尖选手思维路径的<strong>「三步拆解法」</strong></h2>
 
             <p>
-                我们精选 <strong>CodeForces</strong>作为训练载体。这类比赛难度曲线平滑、思维跳跃适中，是构建思维框架、学习解题套路的最佳训练场。
+                我们精选 <strong>CodeForces 进阶题</strong>，通过<strong>深度文字解析</strong>为你拆解竞赛思维的底层逻辑：
             </p>
 
-            <p>在每一道题中，你将获得：</p>
-
             <div class="feature">
-                <h3>🧠 完整的思维路径还原</h3>
+                <h3>1. 🧠 完整思维路径还原（独家核心）</h3>
                 <p>
-                    这是任何公开题解都无法给予你的核心价值。我们带你从读完题目的第一秒开始，还原顶尖选手是如何分析、试错、联想，并最终找到正确思路的全过程。
+                    大部分题解只告诉你“结果”。我们还原顶尖选手从读题到思路确立的<strong>思考、试错和决策的全过程</strong>。
                 </p>
             </div>
 
             <div class="feature">
-                <h3>🔗 关键思维节点的突破方法</h3>
+                <h3>2. 🎯 关键“思维跳跃”的突破训练</h3>
                 <p>
-                    “我为什么能想到这一步？”<br>
-                    我们会剖析最关键的思维跳跃，并给出对应的“母题训练”。通过刻意练习，你也能建立这种直觉。
+                    剖析最关键的思维转折点，并给出对应的<strong>“母题”或“思维链条”训练</strong>。建立竞赛解题的<strong>直觉</strong>。
                 </p>
             </div>
 
             <div class="feature">
-                <h3>🔍 精挑细选题目</h3>
+                <h3>3. 💡 算法决策的本质逻辑</h3>
                 <p>
-                    我们筛选的每一道题都保证难度适中、思维训练价值高，切合实际竞赛需要，帮助你高效掌握核心思维方式。
+                    教你：<strong>什么时候该想到用它、为什么它是正确的、如何排除错误选项</strong>。掌握高手的底层决策逻辑。
                 </p>
             </div>
-
-            <p class="note">
-                <strong>特别声明：</strong><br>
-                我们不会从零讲知识点，而是教你：<br>
-                <strong>什么时候想到用它、为什么它是正确的、高手是如何做决策的。</strong>
+            
+            <p class="note" style="margin-top: 15px; background-color: #f8f9fa; border: 1px solid #ddd; padding: 10px; font-size: 14px; border-radius: 6px;">
+                <strong>📚 为什么我们采用「图文专栏」而非直播？</strong><br>
+                深度文字解析支持你<strong>反复阅读、推敲细节、独立思考</strong>，这是训练深度思维最高效的方式。
             </p>
         </div>
     </section>
 
-    <!-- 讲师团 -->
+    <section id="testimonials" class="section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2>🗣️ 听听学员怎么说</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex: 1 1 300px;">
+                    <p style="font-style: italic; color: #555;">"以前做 DP 题全靠蒙状态，听了松皓老师的‘决策边界分析’，现在终于知道怎么一步步推导了！"</p>
+                    <p style="margin-top: 10px; font-weight: bold; text-align: right;">—— 初一学员 CSP-J 一等奖</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex: 1 1 300px;">
+                    <p style="font-style: italic; color: #555;">"思维路径还原太神了，比看网上的题解管用多了。它教的是‘怎么想到的’，而不只是‘答案是什么’。"</p>
+                    <p style="margin-top: 10px; font-weight: bold; text-align: right;">—— 高一学员 NOIP 280分</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="lecturers" class="section">
         <div class="container">
             <h2>🥇 金牌讲师团</h2>
-                <div class="plan-card">
-                    <h3>主讲人 松皓老师 – 清华大学计算机系</h3>
-                    <ul>
-                        <li>全国青少年信息学奥林匹克竞赛（NOI）银牌</li>
-                        <li>中国大学生程序设计竞赛区域赛第一名</li>
-                        <li>厦门市教育学会拔尖创新人才基础教育专委会理事</li>
-                        <li>十年信奥教学经验</li>
-                        <li>培养NOI获奖学生三十余人，NOIP一等奖学生上百人</li>
-                    </ul>
-                </div>
+            <div class="plan-card">
+                <h3>主讲人 松皓老师 – 清华大学计算机系</h3>
+                <ul>
+                    <li><strong>十年</strong>信奥教学经验，专注于竞赛思维与算法策略。</li>
+                    <li>全国青少年信息学奥林匹克竞赛（NOI）<strong>银牌</strong>得主。</li>
+                    <li>中国大学生程序设计竞赛区域赛<strong>第一名</strong>。</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- 课程方案 -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="container">
+            <div style="background-color: #fff5f5; border: 1px solid #ffcccc; padding: 15px; border-radius: 8px;">
+                <h3 style="color: #d9534f; margin-top: 0; font-size: 18px;">⚠️ 报名须知：这门课可能不适合你</h3>
+                <p style="font-size: 14px; margin-bottom: 0;">
+                    如果您是<strong>零基础</strong>，或者希望寻找<strong>“不用动脑的押题卷”</strong>，请勿购买。本课程专为渴望突破思维瓶颈、愿意深度思考的选手设计。
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="plans" class="section">
         <div class="container">
             <h2>💰 课程方案与定价</h2>
-            <div class="plan-card">
-                <h3>课程方案</h3>
-                <p><strong>内容:</strong> 包含16道精选进阶试题的文字版深度解析</p>
-                <p><strong>适合人群:</strong> 已经学习完对应级别算法知识点，但在灵活运用上有所欠缺</p>
-                <p><strong>不适合人群:</strong> 零基础的同学</p>
-                <p><strong>优势:</strong> 系统性学习、构建思维体系, 专业指导，直击思维核心，精选高价值题目，契合度高，避免无效刷题</p>
-            </div>
+            
+            <p class="qa-value-prop">
+                💎 购买任意月/年方案，均<strong>免费赠送</strong>主讲人松皓老师每周 1 小时答疑直播。
+            </p>
+            
+            <p style="text-align: center; margin-bottom: 20px; color: #555;">
+                <strong>核心交付：</strong> 每月更新 <strong>16篇</strong> 深度文字思维解析
+            </p>
 
             <div class="pricing-table-wrapper">
                 <table class="pricing-table">
                     <thead>
                         <tr>
-                            <th>类别</th>
-                            <th>目标</th>
-                            <th>包月</th>
-                            <th>包年</th>
+                            <th>课程级别</th>
+                            <th>目标成绩</th>
+                            <th>价格</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="tag tag-a">A</span></td>
+                            <td><span class="tag tag-a">初级思维进阶</span></td>
                             <td>CSP-J 300+</td>
                             <td><strong>299元/月</strong></td>
-                            <td>2999元/年</td>
                         </tr>
                         <tr>
-                            <td><span class="tag tag-b">B</span></td>
+                            <td><span class="tag tag-b">中级思维突破</span></td>
                             <td>CSP-S 200+</td>
                             <td><strong>499元/月</strong></td>
-                            <td>4999元/年</td>
                         </tr>
                         <tr>
-                            <td><span class="tag tag-c">C</span></td>
+                            <td><span class="tag tag-c">高级满分冲刺</span></td>
                             <td>NOIP 200+</td>
                             <td><strong>999元/月</strong></td>
-                            <td>9999元/年</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-
-            <p>我们承诺：认真跟随课程节奏，你的算法思维能力一定迎来质的飞跃。</p>
+            <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+                （答疑服务按咨询价折算价值 ¥1200/周，<strong>学员独享</strong>。）
+            </p>
         </div>
     </section>
 
-    <!-- 联系方式 -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>联系我们</h2>
-            <p>微信扫码添加：</p>  
-
-            <div style="text-align: center; margin-top: 15px;">
-                <img src="images/wechat.jpg" 
-                     alt="微信二维码" 
-                     style="width: 180px; max-width: 60%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-            </div>
-        </div>
-    </section>
-
-    <!-- 专业咨询服务 -->
-    <section id="consulting" class="section">
-        <div class="container">
-            <h2>🎓 专业咨询服务</h2>
-            <p>如果您还希望针对孩子的学习情况获得一对一指导，或者想了解竞赛规划、升学路径，我们提供专业咨询服务。</p> 
-
-            <div class="plan-card" style="text-align:center;">
-                <p><strong>服务内容:</strong></p>
-                <ul style="list-style: disc; padding-left: 20px; text-align: left; display: inline-block;">
-                    <li>针对竞赛训练进度和学习习惯提供个性化建议</li>
-                    <li>解答算法学习、题目选择、解题思路等问题</li>
-                    <li>提供中长期升学规划和竞赛策略指导</li>
-                </ul>
-                <p><strong>收费标准:</strong> 999元 / 1小时</p>
-                <p><strong>预约方式:</strong> 添加微信或发送邮件预约，完成支付后安排咨询时间</p>
-                <a href="#contact" class="btn-primary">立即预约</a>
-            </div>
-            <p style="text-align:center; font-size: 13px; color: #666;">💡 本服务仅限付费用户，一对一专业咨询，避免信息泄露或滥用。</p>
-        </div>
-    </section>
-
-
-
-    <!-- 常见问题 -->
     <section id="faq" class="section">
         <div class="container">
             <h2>常见问题 (Q&A)</h2>
             <div class="faq-item">
-                <h3>Q1: 我自己看免费题解、总结方法，和上你的课有什么区别？</h3>
-                <p>A1: 这是个很好的问题。如果你能通过零散的题解，自行反推出作者的完整思考过程和决策依据，并系统化为自己的方法论，那么你确实不需要这门课程。</p>
-                <p>然而，绝大多数人遇到的困境是：“答案我看得懂，但我自己就是想不到。”</p>
-                <p>我们的课程正是为了解决这个问题。我们提供的不仅是“地图”（题解），更是教你如何绘制地图的“罗盘和方法论”（思维模型）。这能帮你节省大量无效的自我摸索时间，直达问题核心。</p>
+                <h3>Q1: 为什么是文字解析而不是视频课？</h3>
+                <p>A1: 视频课容易让人产生“听懂了”的错觉，但很难通过“听”来练就深度思维。<strong>文字版解析</strong>经过精心打磨，去除了废话，让你能静下心来推敲每一个逻辑转折点，复习效率是视频的5倍以上。</p>
             </div>
             <div class="faq-item">
                 <h3>Q2: 为什么价格比一般网课贵？</h3>
-                <p>A2: 你购买的不是题解，而是顶尖选手的思维方式和宝贵经验，这本身就是稀缺且高价值的。</p>
-                <p>价值远超价格：我们教你“做一道题，会一类题”的能力。这种思维上的提升是永久性的，其价值远非几百元可衡量。相比于动辄数千上万、效果却不明确的线下培训，我们的定价极具性价比。
-                <p>专业无可替代：作为参考，我们的讲师进行一对一辅导的市价远超1500元/2小时。通过这门课程，你相当于以极低的成本，获得了这些顶尖大脑系统性的思考沉淀。思维的价值，是无法用金钱简单估量的。</p>
-            </div>
-            <div class="faq-item">
-                <h3>Q3: 这门课适合零基础学生吗？</h3>
-                <p>A3: 本课程需要一定基础知识，否则会跟不上思维分析节奏。零基础学生建议先打好基础再学习。</p>
-            </div>          
-
-            <div class="faq-item">
-                <h3>Q4: 买了课程就能保证成绩提升吗？</h3>
-                <p>A4: 成绩提升依赖认真跟随课程训练。课程提供思维方法和精选题目，但能力提升还需要学员积极练习和思考。</p>
-            </div>          
-
-            <div class="faq-item">
-                <h3>Q5: 题目质量如何保证？</h3>
-                <p>A5: 所有题目由讲师精挑细选，保证难度适中、贴近竞赛实战。自己随便找题目，难以保证质量和系统性。</p>
+                <p>A2: 你购买的是<strong>顶尖选手的思维模型</strong>，且每周<strong>免费赠送</strong>价值 ¥1200 的松皓老师答疑时间。这个定价是在用极高的性价比换取清华银牌得主的系统思考沉淀和专属指导。</p>
             </div>
         </div>
     </section>
 
-    <!-- 页脚 -->
+    <section id="contact" class="section" style="margin-bottom: 60px;">
+        <div class="container">
+            <h2>📞 立即开始思维升级</h2>
+            <div style="background: #e8f4ff; padding: 20px; border-radius: 10px; text-align: center;">
+                <p style="font-size: 18px; color: #007bff; margin-bottom: 10px;"><strong>🎁 限时福利</strong></p>
+                
+                <p>扫码添加微信，备注<strong>【试听】</strong></p>
+                <p>免费领取 <strong>1 道精选真题的完整思维解析 PDF</strong></p>
+                <p style="font-size: 13px; color: #666;">（亲自体验图文深度解析的魅力，还有机会锁定免费答疑名额）</p>
+                
+                <div style="margin-top: 20px;">
+                    <img src="images/wechat.jpg"
+                         alt="微信二维码"
+                         style="width: 180px; max-width: 60%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
-            <p>&copy; 保留所有权利。</p>
+            <p>&copy; 信奥《思维路径还原》训练营 保留所有权利。</p>
         </div>
     </footer>
+
+    <div class="sticky-footer">
+        <div class="sticky-text">
+            <strong>🚀 免费领试读资料 & 锁定答疑名额</strong>
+        </div>
+        <a href="#contact" class="sticky-btn">立即加微信</a>
+    </div>
+
 </body>
 </html>
